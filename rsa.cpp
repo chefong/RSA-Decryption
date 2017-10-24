@@ -87,10 +87,6 @@ void readData(const string &name, vector<int> &v) {
     inFS.close();
 }
 
-// char decode(int n, char arr[]) {
-// 	for ()
-// }
-
 //Public key = (e, n) = (13, 77)
 
 int main() {
@@ -152,17 +148,6 @@ int main() {
 	int multiNum = inverseMod(e, phi);
 
 	// cout << e << "^-1 (mod " << phi << ") = " << multiNum << endl;
-
-	// while (userNum >= 0){
-	// 	cout << "Enter a number for RSA decryption (negative to quit)" << endl;
-	// 	cin >> userNum;
-	// 	if (userNum < 0) {
-	// 		break;
-	// 	}
-	// 	modExp = powerModulo(userNum, multiNum, n);
-	// 	cout << "Pushing " << modExp << " to RSA queue" << endl;
-	// 	RSA.push(modExp);
-	// }
 
 	for (int i = 0; i < init.size(); ++i) {
 		modExp = powerModulo(init.at(i), multiNum, n);
